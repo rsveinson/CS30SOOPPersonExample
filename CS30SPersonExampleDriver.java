@@ -69,6 +69,19 @@ public class CS30SPersonExampleDriver {
         p1.setName("ArthurDent");
         p1.setAge(23);
         System.out.println(p1.getName() + ": " + p1.getAge());
+        
+        // *** person2 stuff ***
+        System.out.println(nl + nl + "-----------Now for Person2------------");
+        System.out.println("a field called birthYear and a static final field");
+        System.out.println("for the current year so that the age can be calculated on demand.");
+        System.out.println(nl);
+        
+        
+        Person2 p21 = new Person2("RichardIII", 2000);
+        System.out.println("Name: " + p21.getName());
+        System.out.println("Birth Year: " + p21.getBirthYear());
+        System.out.println("Age: " + p21.getAge());
+        
     // ***** Print Formatted Output *****
     
     // ***** Closing Message *****
