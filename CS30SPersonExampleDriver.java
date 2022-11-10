@@ -70,6 +70,23 @@ public class CS30SPersonExampleDriver {
         p1.setAge(23);
         System.out.println(p1.getName() + ": " + p1.getAge());
         
+    // *** the new Person2 class that calculates the age ***
+        System.out.println(nl + nl + "------- Now for Person 2 -------");
+        System.out.println("the age field has been replaced with ");
+        System.out.println("a birthYear field and a year static final ");
+        System.out.println("constant so that the age can be calculated on demand.");
+        System.out.print(nl);
+        
+        Person2 p21 = new Person2("RichardIII", 2000);
+        System.out.println("Name: " + p21.getName());
+        System.out.println("Birth Year: " + p21.getBirthYear());
+        System.out.println("Age: " + p21.getAge());
+        
+        System.out.println(nl + "Now using toString" );
+        System.out.println(p21);
+
+        
+    // ***** Print Formatted Output *****
             // ***** Print Formatted Output *****
     
     // ***** Closing Message *****
