@@ -83,7 +83,12 @@ public class CS30SPersonExampleDriver {
         System.out.println("Age: " + p21.getAge());
         
         System.out.println(nl + "Now using toString" );
+        
+        Person2 p22 = new Person2("EdwardIV", 1998);
+        Person2 p23 = new Person2();
         System.out.println(p21);
+        System.out.println(p22);
+        System.out.println(p23);
 
         
     // ***** Print Formatted Output *****

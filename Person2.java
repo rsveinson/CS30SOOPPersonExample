@@ -23,11 +23,13 @@ public class Person2 {
      * for the current currentYear.
      */        
     private static final int currentYear = Year.now().getValue();
+    private static int nextID = 1000;    // provides a uniqe id number for all person2s
     
     // ** fields ***
     
     private String name;
     private int birthYear;
+    private int id;
     
     // ** constructors **
     
@@ -35,12 +37,14 @@ public class Person2 {
     public Person2(){
         this.name = "unknown";
         this.birthYear = 1900;
+        id = getNextID();
     }// end default
     
     // full-arg constructor
     public Person2(String name, int birthYear){
         this.name = name;
         this.birthYear = birthYear;
+        id = getNextID();
     }// end full arg
     
     // ** getters **
@@ -54,6 +58,10 @@ public class Person2 {
         return this.birthYear;
     }// end get birthYear
     
+    public int getID(){
+        return this.id;
+    }// end of getid
+    
     // ** setters **
     
     // setters allow the state to be changed
@@ -66,13 +74,18 @@ public class Person2 {
     }// end setAge
     
     // ** other **
+    // get the next id and increment nextID
+    public int getNextID(){
+        return nextID++;
+    }//end get id
+    
     public int getAge(){
         return currentYear - birthYear;
     }// end get age
     
     @Override
     public String toString(){
-        String st = getName() + ": " + getAge();
+        String st = getName() + ": " + getID() + ": " + getAge();
         return st;
     }// end toSTring
     
