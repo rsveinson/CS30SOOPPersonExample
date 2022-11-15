@@ -75,7 +75,7 @@ public class Person2 {
     
     // ** other **
     // get the next id and increment nextID
-    public int getNextID(){
+    private int getNextID(){
         return nextID++;
     }//end get id
     
