@@ -52,6 +52,12 @@ public class TestGitHub {
         
         System.out.println(banner);
         //fout.print(banner);
+        
+         banner = "*****************************" + nl;
+        banner += "Name:        Sveinson" + nl;
+        banner += "Class:       CS30S" + nl;
+        banner += "Assignment:  Ax Qy" + nl;
+        banner += "*****************************" + nl + nl;
     
     // ***** Get Input *****
     
