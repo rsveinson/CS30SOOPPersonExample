@@ -59,13 +59,17 @@ public class CS30SPersonExampleDriverWithArrayList {
         System.out.println("" + list.size() + list);
         
         for(Person2 p : list){
-            // System.out.println(p.getID());
-            // System.out.println(p.getName());
-            // System.out.println(p.getBirthYear());
-            // System.out.println(p.getAge());
-            System.out.println(p);
+            System.out.println(p.getID());
+            System.out.println(p.getName());
+            System.out.println(p.getBirthYear());
+            System.out.println(p.getAge());
+            //System.out.println(p);
             System.out.println("----------------" + nl);
         }// end for each
+        
+        for(int i = 0; i < list.size(); i++){
+            System.out.println(list.get(i).getID());
+        }// end for
         
         
         int age = list.get(0).getAge();
